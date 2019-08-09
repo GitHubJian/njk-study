@@ -1,0 +1,7 @@
+{% if list.length > 0 %}
+<ul>
+    {% for item in list %}
+    <li>Name: {{ item.name }}, Age: {{ item.age }} {{ loop.index0 }}</li>
+    {% endfor %}
+</ul>
+{% endif %}

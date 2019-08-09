@@ -1,0 +1,19 @@
+{% extends "parent.njk" %}
+
+{% block left %}
+This is the {{ foo.bar | time }} side!
+{% endblock %}
+
+{% block right %}
+{{ super() }}
+This is the right side!
+
+
+{% if isVisibility %}
+It is visibility
+{% endif %}
+
+
+{% include "list.njk" %}
+
+{% endblock %}
